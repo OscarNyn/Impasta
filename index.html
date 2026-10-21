@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impasta</title>
+    <style>
+      :root {
+        --bg: #eef2ff;
+        --panel: #ffffff;
+        --ink: #111827;
+        --muted: #4b5563;
+        --line: #dbe3f0;
+        --brand: #7c3aed;
+        --brand-2: #3b82f6;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #eef2ff, #f8fafc);
+        color: var(--ink);
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: min(760px, 100%);
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: 0 22px 60px rgba(15, 23, 42, 0.08);
+        padding: 32px;
+      }
+      .tag {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--brand);
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        line-height: 1;
+      }
+      p {
+        margin: 0 0 22px;
+        color: var(--muted);
+        font-size: 1.05rem;
+        line-height: 1.6;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      a.button {
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 12px;
+        font-weight: 700;
+        transition: transform 0.15s ease, opacity 0.15s ease;
+      }
+      a.button:hover { transform: translateY(-1px); }
+      a.primary {
+        background: linear-gradient(135deg, var(--brand), var(--brand-2));
+        color: white;
+      }
+      a.secondary {
+        border: 1px solid var(--line);
+        color: var(--ink);
+        background: white;
+      }
+      ul {
+        margin: 24px 0 0;
+        padding-left: 18px;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="tag">Impasta</div>
+      <h1>Play the game</h1>
+      <p>
+        This project is a browser game called Imposter. It is ready to run in a browser and can be hosted as a website with GitHub Pages.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="./Downloads/New%20folder%20(2)/Imposter.html">Launch game</a>
+        <a class="button secondary" href="https://github.com/OscarNyn/Impasta" target="_blank" rel="noreferrer">Open GitHub repo</a>
+      </div>
+
+      <ul>
+        <li>Works as a static website</li>
+        <li>Uses one HTML file and browser JavaScript</li>
+        <li>Ready for GitHub Pages deployment</li>
+      </ul>
+    </main>
+  </body>
+</html>
